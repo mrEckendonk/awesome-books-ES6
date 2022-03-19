@@ -6,15 +6,15 @@ export default class Methods {
   }
 
   addBook = (bookTitle, bookAuthor, bookId) => {
-      const book = {
-        title: bookTitle,
-        author: bookAuthor,
-        id: bookId,
-        };
+    const book = {
+      title: bookTitle,
+      author: bookAuthor,
+      id: bookId,
+      };
     this.books.push(book);
-    };
+};
 
   removeBook = (id) => {
     this.books.splice(this.books[id - 1], 1);
-    };
+  };
 }
