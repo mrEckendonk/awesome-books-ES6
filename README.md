@@ -6,7 +6,7 @@
 
 ## Live preview
 
-Awesome Books can be accessed [here](https://isaacpitwa.github.io/awesome-books/)
+Awesome Books can be accessed [here](https://github.com/mrEckendonk/awesome-books-ES6/)
 
 ![screenshot](./awesomebook.png)
 
@@ -21,11 +21,11 @@ Awesome Books can be accessed [here](https://isaacpitwa.github.io/awesome-books/
 ## Development set up
 
 Clone Repository using
-`git clone git@github.com:isaacpitwa/awesome-books.git`
+`git clone git@github.com:mrEckendonk/awesome-books-ES6.git`
 
 OR using HTTPS
 
-`https://github.com/isaacpitwa/awesome-books.git`
+`https://github.com/mrEckendonk/awesome-books-ES6.git`
 
 move into project directory
 `cd awesome-books`

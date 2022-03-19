@@ -8,9 +8,9 @@ methods.books = [];
 const getData = () => {
   const formData = JSON.parse(localStorage.getItem('myBooks'));
   if (formData == null) {
-      methods.books = [];
+    methods.books = [];
   } else {
-      methods.books = formData;
+    methods.books = formData;
   }
 };
 
@@ -46,7 +46,6 @@ const displayBooks = () => {
 
     bookElement.appendChild(h2);
     bookElement.appendChild(removeBtn);
-
     booksList.appendChild(bookElement);
   }
   saveData();
