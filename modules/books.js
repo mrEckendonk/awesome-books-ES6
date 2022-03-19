@@ -1,20 +1,20 @@
 export default class Methods {
-    constructor(title, author, id) {
-        this.title = title;
-        this.author = author;
-        this.id = id;
-    }
+  constructor(title, author, id) {
+    this.title = title;
+    this.author = author;
+    this.id = id;
+  }
 
-    addBook = (bookTitle, bookAuthor, bookId) => {
-        const book = {
-            title: bookTitle,
-            author: bookAuthor,
-            id: bookId,
+  addBook = (bookTitle, bookAuthor, bookId) => {
+      const book = {
+        title: bookTitle,
+        author: bookAuthor,
+        id: bookId,
         };
-        this.books.push(book);
+    this.books.push(book);
     };
 
-    removeBook = (id) => {
-        this.books.splice(this.books[id - 1], 1);
+  removeBook = (id) => {
+    this.books.splice(this.books[id - 1], 1);
     };
 }

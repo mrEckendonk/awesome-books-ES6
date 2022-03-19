@@ -1,7 +1,6 @@
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 import Methods from './modules/books.js';
 
-
 const methods = new Methods();
 methods.books = [];
 
