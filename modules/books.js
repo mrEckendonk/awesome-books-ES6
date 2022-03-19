@@ -15,6 +15,7 @@ export default class Methods {
   };
 
   removeBook = (id) => {
-    this.books.splice(this.books[id - 1], 1);
-  };
+    this.books = this.books.filter(book => book.id !== id);
+  }
+
 }
