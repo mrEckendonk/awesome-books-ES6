@@ -15,7 +15,6 @@ export default class Methods {
   };
 
   removeBook = (id) => {
-    this.books = this.books.filter(book => book.id !== id);
-  }
-
+    this.books = this.books.filter((book) => book.id !== id);
+  };
 }
