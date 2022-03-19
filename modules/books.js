@@ -10,9 +10,9 @@ export default class Methods {
       title: bookTitle,
       author: bookAuthor,
       id: bookId,
-      };
+    };
     this.books.push(book);
-};
+  };
 
   removeBook = (id) => {
     this.books.splice(this.books[id - 1], 1);
