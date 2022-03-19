@@ -1,32 +1,25 @@
-import {Methods} from './modules/books.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
+import Methods from './modules/books.js';
 
-// class Methods {
-//   constructor(title, author, id) {
-//     this.title = title;
-//     this.author = author;
-//     this.id = id;
-//   }
-
-//   addBook = (bookTitle, bookAuthor, bookId) => {
-//     const book = {
-//       title: bookTitle,
-//       author: bookAuthor,
-//       id: bookId,
-//     };
-//     this.books.push(book);
-//   };
-
-//   removeBook = (id) => {
-//     this.books.splice(this.books[id - 1], 1);
-//   };
-// }
 
 const methods = new Methods();
 methods.books = [];
 
+const getData = () => {
+  const formData = JSON.parse(localStorage.getItem('myBooks'));
+  if (formData == null) {
+      methods.books = [];
+  } else {
+      methods.books = formData;
+  }
+};
+
 const saveData = () => {
   localStorage.setItem('myBooks', JSON.stringify(methods.books));
 };
+
+const DateandTime = DateTime.now().toHTTP();
+document.querySelector('.date').textContent = DateandTime;
 
 const displayBooks = () => {
   const booksList = document.querySelector('.books');
@@ -57,15 +50,6 @@ const displayBooks = () => {
     booksList.appendChild(bookElement);
   }
   saveData();
-};
-
-const getData = () => {
-  const formData = JSON.parse(localStorage.getItem('myBooks'));
-  if (formData == null) {
-    methods.books = [];
-  } else {
-    methods.books = formData;
-  }
 };
 
 window.onbeforeunload = () => {
