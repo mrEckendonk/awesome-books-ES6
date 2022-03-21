@@ -6,7 +6,7 @@
 
 ## Live preview
 
-Awesome Books can be accessed [here](https://github.com/mrEckendonk/awesome-books-ES6/)
+Awesome Books can be accessed [here](https://mreckendonk.github.io/awesome-books-ES6/)
 
 ![screenshot](./awesomebook.png)
 
