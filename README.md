@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dae8eeb1-c565-4e8f-bb1b-c11180eb5aa3/deploy-status)](https://app.netlify.com/sites/aesthetic-starlight-4ef5db/deploys) ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Awesome Books
 
@@ -6,6 +6,7 @@
 
 ## Live preview
 
+![Live preview](awsome-books.netlify.app)
 
 ![screenshot](./awesomebook.png)
 
